@@ -11,8 +11,6 @@ const server = express();
 server.use(cors({ origin: 'http://localhost:3000' }));
 // server.use(loginFilter());
 server.use(express.json());
-server.use('/users', usersController);
-server.use('/vacations', vacationsController);
-server.use('/likedVacations', likedVacationsController);
+// server.use('/likedVacations', likedVacationsController);
 
 server.listen(3001, () => console.log(`Listening on http://localhost:${port}`));
